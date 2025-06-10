@@ -1,10 +1,11 @@
 name: Node.js CI/CD
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ ci-build ]
   pull_request:
-    branches: [ main ]
+    branches: [ ci-build ]
 
 jobs:
   build:
